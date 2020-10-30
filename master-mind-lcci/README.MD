@@ -25,7 +25,10 @@ solution和guess仅包含"R","G","B","Y"这4种字符
 - map[string]int用来储存solution的字符出现频率
 - guess数组去掉完全匹配的字符，去掉对应位置在soulution的字符
 #### 难点
-- 题目理解
+- 题目理解:     
+首先去掉guess和solution的猜中元素，剩余的元素，solution中计算每个字符出现频率，      
+遍历guess字符串，每遍历一个guess的元素，若匹配上solution的map的key，统计的       
+数字减去一，伪猜中+1。
 - go基础
 #### 知识点
 - map和slice的操作

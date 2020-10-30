@@ -69,3 +69,32 @@ func notHit(guess string, arrayHit []int) []string {
 	fmt.Println(array, "array00")
 	return array
 }
+
+//another man's Way
+//masterMind https://leetcode-cn.com/problems/master-mind-lcci/solution/liang-ci-bian-li-by-triste_24/
+
+//func masterMind(solution string, guess string) []int {
+//	solutionMap := make(map[byte]int, 0)
+//
+//	ret := []int{0, 0}
+//	for i := 0; i < len(solution); i++ {
+//		if solution[i] == guess[i] {
+//			//猜中
+//			ret[0]++
+//		} else {
+//			//非猜中，用来统计伪猜中
+//			solutionMap[solution[i]]++
+//		}
+//	}
+//	for i := 0; i < len(guess); i++ {
+//		if solution[i] != guess[i] {
+//			//统计伪猜中
+//			if solutionMap[guess[i]] > 0 {
+//				//消耗掉一个
+//				solutionMap[guess[i]]--
+//				ret[1]++
+//			}
+//		}
+//	}
+//	return ret
+//}
