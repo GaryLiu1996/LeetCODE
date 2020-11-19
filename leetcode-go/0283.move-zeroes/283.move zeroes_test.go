@@ -1,9 +1,10 @@
 package _283_move_zeroes
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_MoveZeroes(t *testing.T) {
-	arr := []int{1, 0, 0}
+	arr := []int{0, 1, 0, 3, 12}
 	moveZeroes(arr)
-	t.Log("123")
 }
