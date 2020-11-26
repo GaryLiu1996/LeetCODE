@@ -51,10 +51,12 @@ import (
 //91.35%
 //的用户
 func sortString(s string) string {
-	fmt.Println("AAAAA", 'a')                                                                 //AAAAA 97-------输出的是a的utf-8编码
-	cnt := ['z' + 1]int{}                                                                     //GO的字符有两种 byte(utf-8)、rune(int64)，这里是前者。
-	fmt.Println("BBBBB", reflect.TypeOf('z'+1), reflect.TypeOf(1), reflect.TypeOf(byte('z'))) //int32 int uint8
+	//Go 语言的 string 是用 utf-8 进行编码的，英文字母占用一个字节8BIT ，而中文字母占用 3个字节
+	fmt.Println("'a'---type:", reflect.TypeOf('a'))                                                                //97-------输出的是a的unicode编码,int32
+	cnt := ['z' + 1]int{}                                                                                          //GO的字符有两种 byte(utf-8)、rune(int32)，'z'+1类型是int32。
+	fmt.Println("'z'+1,1,byte('z')----type:", reflect.TypeOf('z'+1), reflect.TypeOf(1), reflect.TypeOf(byte('z'))) //int32 int uint8
 	for _, ch := range s {
+		fmt.Println("ch-type:", reflect.TypeOf(ch))
 		cnt[ch]++
 	}
 	n := len(s)
