@@ -30,3 +30,7 @@ func maximumGap(nums []int) int {
 	fmt.Println("--", diff)
 	return diff
 }
+
+//TODO:桶排序
+//TODO:基数排序
+//TODO:所有排序算法总结整理，CSDN等论坛
