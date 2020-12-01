@@ -6,7 +6,7 @@ import (
 )
 
 func Test_0034(t *testing.T) {
-	target := 11
+	target := 6
 	arr := []int{5, 7, 7, 8, 8, 10}
 	fmt.Println("--", searchRange(arr, target))
 }
