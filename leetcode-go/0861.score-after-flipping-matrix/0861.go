@@ -51,7 +51,7 @@ func matrixScore(A [][]int) int {
 	return sum
 }
 
-//官方题解 TODO:
+//官方题解
 //执行用时：
 //0 ms
 //, 在所有 Go 提交中击败了
@@ -68,7 +68,7 @@ func matrixScore(A [][]int) int {
 //    for j := 1; j < n; j++ {
 //        ones := 0
 //        for _, row := range a {
-//            if row[j] == row[0] {
+//            if row[j] == row[0] {//官方题解的这个处理是因为横向的翻转性质row[j]和row[0]的等式关系是确定的，彩彩彩！
 //                ones++
 //            }
 //        }
