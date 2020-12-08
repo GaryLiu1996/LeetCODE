@@ -25,17 +25,21 @@
 链接：https://leetcode-cn.com/problems/additive-number
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
+#### 关键词
+- 回溯+剪枝
+
 ### 思路
 参考[霜神(halfrost)代码](https://books.halfrost.com/leetcode/ChapterFour/0306.Additive-Number/)
 - 在给出的字符串中判断该字符串是否为斐波那契数列形式的字符串。
 - 由于每次判断需要累加 2 个数字，所以在 DFS 遍历的过程中需要维护 2 个数的边界，firstEnd 和 secondEnd，两个数加起来的和数的起始位置是 secondEnd + 1。每次在移动 firstEnd 和 secondEnd 的时候，需要判断 strings.HasPrefix(num[secondEnd + 1:], strconv.Itoa(x1 + x2))，即后面的字符串中是否以和为开头。
 - 如果第一个数字起始数字出现了 0 ，或者第二个数字起始数字出现了 0，都算非法异常情况，都应该直接返回 false。
 
-#### 关联题目
-- 0842.将数组拆分成斐波那契序列
-
 #### 注意
 - 边界应该认真考虑一下
 - 限制条件的优化
+- 回溯和递归的关系
 
+
+#### 关联题目
+- 0842.将数组拆分成斐波那契序列
 
