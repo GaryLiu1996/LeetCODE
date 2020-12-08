@@ -26,7 +26,7 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 #### 关键词
-- 回溯+剪枝
+- 回溯
 
 ### 思路
 参考[霜神(halfrost)代码](https://books.halfrost.com/leetcode/ChapterFour/0306.Additive-Number/)
