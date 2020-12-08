@@ -26,7 +26,7 @@ func isAdditiveNumber(num string) bool {
 			break
 		}
 		first, _ := strconv.Atoi(num[0 : firstEnd+1])                                                                                    //string->int
-		for secondEnd := firstEnd + 1; int(math.Max(float64(firstEnd), float64(secondEnd-firstEnd))) < len(num)-secondEnd; secondEnd++ { //前两个数字的位数应该小于等于剩余数字位数
+		for secondEnd := firstEnd + 1; int(math.Max(float64(firstEnd), float64(secondEnd-firstEnd))) < len(num)-secondEnd; secondEnd++ { //前两个数字的位数应该小于等于剩余数字位数<=,但是我觉得不需要有等号
 			if num[firstEnd+1] == '0' && secondEnd-firstEnd > 1 {
 				break
 			}
