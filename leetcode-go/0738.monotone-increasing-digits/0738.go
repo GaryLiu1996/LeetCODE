@@ -1,4 +1,4 @@
-package _783_monotone_increasing_digits
+package _738_monotone_increasing_digits
 
 func monotoneIncreasingDigits(N int) int {
 	low := 9
