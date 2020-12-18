@@ -39,5 +39,6 @@
 #### 思路
 参考[官方题解](https://leetcode-cn.com/problems/find-the-difference/solution/zhao-bu-tong-by-leetcode-solution-mtqf/)     
 - 方法一：因为题目描述不需要字母与顺序有关，所以用哈希表存储字母出现次数
-- 方法二：位运算，出现奇数次的字符
+- 方法二：位运算，出现奇数次的字符(TODO
+)
 - 方法三：求和，两个字符串的ASCII和相减
